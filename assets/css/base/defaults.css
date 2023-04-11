@@ -34,6 +34,9 @@ a {
   cursor: pointer;
   color: var(--white);
 }
+figure {
+  margin: 0;
+}
 button {
   position: relative;
   cursor: pointer;

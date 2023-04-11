@@ -2,10 +2,9 @@
 
 //// loading sources files
 function theme_source_files(){
-    wp_enqueue_style( 'swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css', array(), '9.0.0' );
     wp_enqueue_style('main-css', get_theme_file_uri('assets/css/style.css'));
     wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js', array(), '3.11.4', true );
-    wp_enqueue_script( 'swiper', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', array(), '9.0.0', true );
+    wp_enqueue_script( 'typed-js', 'https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js', array(), '2.0.14', true );
     wp_enqueue_script('main-js', get_theme_file_uri('assets/js/script.js'), array(), false, true);
 }
 
@@ -26,7 +25,7 @@ function wpdocs_setup() {
     add_theme_support( 'customize-selective-refresh-widgets' );
     add_theme_support( 'starter-content' );
     add_theme_support( 'wp-pagenavi' ); // Add this line to enable wp-pagenavi plugin.
-    add_image_size('pageBanner', 1048, 385, true);
+    add_image_size('pageBanner', 1400, 360, true);
 }
 
 
@@ -78,4 +77,55 @@ function widget_areas_function(){
 }
 
 add_action('widgets_init', 'widget_areas_function');
+
+//////// BANNER BLOCK
+
+function pageBanner($args = NULL) {
+
+    if (!isset($args['title'])) {
+        $args['title'] = get_the_title();
+    }
+
+    if (isset($args['video'])) {
+        ?>
+        <section class="banner mb-4">
+            <figure class="banner-wrapper">
+                <video
+                    src="<?php echo $args['video']; ?>"
+                    class="banner__content banner__video"
+                    autoplay
+                    loop
+                ></video>
+                <h1 class="banner__heading" data-subheading="<?php echo $args['title'] ?>">
+                    <?php echo $args['title'] ?>
+                </h1>
+            </figure>
+        </section>
+        <?php
+    } else {
+        if (isset($args['photo'])) {
+            ?>
+            <section class="banner mb-4">
+                <figure class="banner-wrapper">
+                    <img src="<?php echo $args['photo']; ?>" alt="image" class="banner__content">
+                    <h1 class="banner__heading" data-subheading="<?php echo $args['title'] ?>">
+                        <?php echo $args['title'] ?>
+                    </h1>
+                </figure>
+            </section>
+            <?php
+        } else {
+            ?>
+            <section class="banner mb-4">
+                <figure class="banner-wrapper">
+                    <img src="/wp-content/themes/boris-galac/assets/images/offer-img-4.jpg" alt="image" class="banner__content">
+                    <h1 class="banner__heading" data-subheading="<?php echo $args['title'] ?>">
+                        <?php echo $args['title'] ?>
+                    </h1>
+                </figure>
+            </section>
+            <?php
+        }
+    }
+}
 

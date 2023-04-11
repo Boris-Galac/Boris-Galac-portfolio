@@ -18,8 +18,6 @@
   content: "";
   position: absolute;
 }
-.my-work-card--heading {
-}
 
 /*///////////// WEB CARD */
 
@@ -113,6 +111,10 @@
 }
 .blog__card-date {
   color: var(--neutral-600);
+}
+.blog__card-category a {
+  color: var(--neutral-800);
+  padding-inline: 0.5rem;
 }
 .separator-line {
   width: 2px;
