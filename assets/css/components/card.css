@@ -1,0 +1,225 @@
+.my-work-card {
+  position: relative;
+  overflow: hidden;
+}
+.my-work-card::after {
+  content: "";
+  position: absolute;
+}
+.my-work-card__img-wrapper {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: hsl(194, 47%, 71%);
+  border-radius: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.my-work-card__img-wrapper::after {
+  content: "";
+  position: absolute;
+}
+.my-work-card--heading {
+}
+
+/*///////////// WEB CARD */
+
+.web-card {
+  position: relative;
+  width: max-content;
+  margin-inline: auto;
+  height: 25rem;
+  border: 3px solid rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.7s ease-in-out;
+}
+.web-card:hover {
+  transform: perspective(800px) rotateX(20deg) rotateY(5deg) rotateZ(10deg)
+    skewX(-3deg) skewX(-3deg) scale(1.4);
+  box-shadow: 0 10px 30px rgb(106, 98, 94);
+}
+.web-card:hover .web-card__img {
+  animation: scroll 2s alternate infinite linear;
+}
+.web-card:hover::after {
+  content: "Created by Boris Galac";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.437);
+  color: white;
+  border-radius: 0 0 10px 10px;
+  animation: description 3s forwards ease-in-out;
+}
+@keyframes description {
+  0% {
+    opacity: 0;
+  }
+  15%,
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-45%);
+  }
+}
+@media (max-width: 400px) {
+  .web-card {
+    width: 7.5rem;
+    height: 15rem;
+  }
+}
+
+/*///////////  BLOG CARD */
+
+.blog__card {
+  background-color: var(--neutral-100);
+  border-radius: 0.5rem;
+  grid-template-rows: 55% 45%;
+}
+.blog__card-header-wrapper {
+  position: relative;
+  bottom: 2rem;
+}
+.blog__card-header-wrapper > img {
+  border-radius: 0.5rem;
+  width: 100%;
+  max-height: 100%;
+}
+.blog__card-meta-info {
+  grid-row: 2;
+  color: var(--neutral-800);
+  background-color: var(--white);
+  padding: 0.3rem 0.5rem;
+  border-radius: 100vmax;
+  width: max-content;
+  border: 1px solid var(--neutral-300);
+  position: absolute;
+  bottom: -1rem;
+  left: 10px;
+  box-shadow: 0 2px 3px rgba(128, 128, 128, 0.255);
+}
+.blog__card-date {
+  color: var(--neutral-600);
+}
+.separator-line {
+  width: 2px;
+  height: 1rem;
+  background: var(--neutral-600);
+  margin-inline: 0.5rem;
+}
+.blog__card-body {
+  position: relative;
+  top: -10px;
+}
+.blog__card-heading {
+  font-size: 1.5rem;
+  grid-row: 1;
+}
+.blog__card-text {
+  color: var(--neutral-600);
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+.blog .see-more-link {
+  position: relative;
+  color: var(--neutral-800);
+  width: max-content;
+  bottom: 0;
+  left: 0;
+  background-color: var(--neutral-200);
+  padding-inline: 1rem;
+  border-radius: 100vmax;
+}
+.blog .see-more-link::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  height: 1px;
+  width: 4rem;
+  display: block;
+  background-color: hsl(223, 20%, 76%);
+  transition: 0.3s;
+}
+
+/*/////////// CONTACT SOCIALS CARD  */
+
+.contact-socials__card {
+  background-color: transparent;
+  aspect-ratio: 3/4;
+  width: 17rem;
+  display: grid;
+  place-items: center;
+  perspective: 1000px;
+}
+.contact-socials__card-inner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.5);
+}
+.contact-socials__card:hover .contact-socials__card-inner-wrapper {
+  transform: rotateY(180deg);
+}
+.contact-socials__card-front,
+.contact-socials__card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+.contact-socials__card-front {
+  background-color: var(--neutral-900);
+}
+.contact-socials__card-back {
+  position: relative;
+  background-color: var(--neutral-800);
+  transform: rotateY(180deg);
+  isolation: isolate;
+}
+.contact-socials__card-back::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  mix-blend-mode: overlay;
+}
+.contact-socials__card-1 .contact-socials__card-back::after {
+  background: url("/src/assets/images/social-contact-back-1.png") no-repeat
+    center center/cover;
+  opacity: 0.5;
+}
+.contact-socials__card-2 .contact-socials__card-back::after {
+  background: url("/src/assets/images/social-contact-back-2.png") no-repeat
+    center center/cover;
+  opacity: 0.5;
+}
+.contact-socials__card-3 .contact-socials__card-back::after {
+  background: url("/src/assets/images/social-contact-back-3.png") no-repeat
+    center center/cover;
+  opacity: 0.5;
+}

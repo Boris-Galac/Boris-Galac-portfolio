@@ -1,0 +1,27 @@
+.banner {
+  position: relative;
+  width: 80vw;
+  height: 28vh;
+  right: 0;
+  left: 20%;
+  user-select: none;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    60deg,
+    hsla(0, 0%, 0%, 0.1) 0%,
+    hsla(0, 0%, 0%, 0.8) 100%
+  );
+  user-select: none;
+}
+.banner-wrapper img {
+  height: 100%;
+}
+.banner__video {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+}

@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  line-height: 1.4;
+  font-size: 100%;
+  font-family: "Kanit", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.3;
+  letter-spacing: 1px;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-weight: initial;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+.h1--heading {
+}
+.h2--heading {
+  position: relative;
+  font-size: 3rem;
+  text-transform: uppercase;
+  isolation: isolate;
+}
+.h2--heading::after {
+  content: attr(data-shadow);
+  position: absolute;
+  font-size: inherit;
+  color: var(--white);
+  opacity: 0.05;
+  z-index: -1;
+  display: block;
+  bottom: -15px;
+  left: 0;
+  animation: h3-heading 3.5s alternate infinite ease-in-out;
+}
+@keyframes h3-heading {
+  from {
+    transform: translateX(0px);
+    letter-spacing: 7px;
+  }
+  to {
+    transform: translateX(30px);
+    letter-spacing: 0;
+  }
+}
+.h3--heading {
+  font-size: 2rem;
+  line-height: 120%;
+}
+.p-text {
+  font-weight: 200;
+  color: var(--white);
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+
+/* styled heading */
+
+.offer-banner__heading {
+  position: absolute;
+  right: 5vw;
+  bottom: 4.2rem;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  width: max-content;
+}
+.work--heading {
+  position: relative;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+.work--heading::after {
+  content: "";
+  position: absolute;
+  font-weight: 400;
+  height: 2px;
+  display: block;
+  bottom: -0.5rem;
+  background-color: hsl(0, 0%, 41%);
+  width: min(80%, 25rem);
+}
+.work--subheading {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.work--subheading::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: -7px;
+  display: block;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  width: 15rem;
+}
+.my-work-card--heading {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.banner__heading {
+  position: absolute;
+  bottom: 0;
+  left: -3rem;
+  font-size: clamp(3rem, 7vw, 7rem);
+  z-index: 4;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 600;
+  user-select: none;
+}
+.banner__heading::after {
+  content: attr(data-subheading);
+  position: absolute;
+  bottom: -1rem;
+  font-size: inherit;
+  left: -2rem;
+  letter-spacing: 1rem;
+  width: max-content;
+  color: hsla(0, 0%, 100%, 0.1);
+  animation: banner-heading 6s alternate infinite ease-in-out;
+}
+@keyframes banner-heading {
+  from {
+    transform: translateX(-15%);
+    letter-spacing: 9px;
+  }
+  to {
+    transform: translateX(15%);
+    letter-spacing: 0;
+  }
+}
+
+.nav__item-heading {
+  font-weight: 200;
+  font-size: 10px;
+  text-transform: uppercase;
+}
