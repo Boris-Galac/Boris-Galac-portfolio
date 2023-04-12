@@ -116,28 +116,6 @@
                   My Design work
                 </h3>
               </div>
-              <div class="my-work-card">
-                <div class="my-work-card__img-wrapper p-2">
-                  <img
-                    src="/wp-content/themes/boris-galac/assets/images/graphic-work.png"
-                    alt="my work image"
-                  />
-                </div>
-                <h3 class="h3--heading my-work-card--heading">
-                  My Design work
-                </h3>
-              </div>
-              <div class="my-work-card">
-                <div class="my-work-card__img-wrapper p-2">
-                  <img
-                    src="/wp-content/themes/boris-galac/assets/images/graphic-work.png"
-                    alt="my work image"
-                  />
-                </div>
-                <h3 class="h3--heading my-work-card--heading">
-                  My Design work
-                </h3>
-              </div>
             </div>
           </div>
         </div>

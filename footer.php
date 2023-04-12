@@ -21,7 +21,7 @@
         class="search__input p-1"
         name="search"
         id="search"
-        placeholder="Search for anything..."
+        placeholder="Search for blogs..."
       />
       <button class="search__submit" type="submit">
         <img

@@ -23,8 +23,6 @@ textarea,
 select {
   font: inherit;
 }
-.h1--heading {
-}
 .h2--heading {
   position: relative;
   font-size: 3rem;

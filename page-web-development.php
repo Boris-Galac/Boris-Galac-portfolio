@@ -1,13 +1,13 @@
 <?php get_header() ?>
 
-<main class="main pt-7 web-des-main">
+<main class="main pt-7 web-dev-main">
       <!-- BANNER SECTION -->
       <?php  pageBanner(array(
         'video'=>'/wp-content/themes/boris-galac/assets/videos/web-dev-video.mp4'
       )); ?>
       <!------------------->
 
-      <!-- DESIGN PROCESS SECTION -->
+      <!-- WEB DEV PROCESS SECTION -->
       <section class="work mb-8">
         <div class="container">
           <h2 class="work--heading mb-4">How i make web design process</h2>
@@ -126,24 +126,25 @@
       <!-- MY WORK SECTION -->
       <section class="my-work">
         <div class="container">
-          <h2 class="work--heading mb-4">my web design work</h2>
+          <h2 class="work--heading mb-4">my web development work</h2>
           <div class="my-work__wrapper">
-            <div class="my-work__inner-wrapper d-grid">
-              <!-- <div class="my-work-card">
-                <div class="my-work-card__img-wrapper p-2">
-                  <img
-                    src="/wp-content/themes/boris-galac/assets/images/card-img.png"
-                    alt="my work image"
-                  />
-                </div>
-                <h3 class="h3--heading my-work-card--heading">
-                  My Design work
-                </h3>
-              </div> -->
-            </div>
+            <!-- WEB DEV CARDS -->
+            <?php
+            $args = array(
+                'post_type'=> 'web_development',
+                'posts_per_page'=> -1,
+               );
+               $the_query = new WP_Query($args);
+            if($the_query->have_posts()){
+            while( $the_query->have_posts()){
+                $the_query->the_post();
+            get_template_part('template-parts/content', 'web-dev-project'); 
+            }}
+?>
+            <!------------------->
           </div>
         </div>
       </section>
     </main>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>
