@@ -267,7 +267,7 @@ const observerSkillCards = new IntersectionObserver((entries) => {
   entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
       // Calculate the delay based on the card's index
-      const delay = index * 0.1;
+      const delay = index * 0.13;
 
       // Add the "visible" class to the skill card with the delay
       entry.target.style.transitionDelay = `${delay}s`;

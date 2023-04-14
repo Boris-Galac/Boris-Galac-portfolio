@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--black);
+  background-color: hsl(200, 33%, 2%);
   padding-block: 8rem;
   padding-inline: 4rem;
 }
@@ -30,7 +30,7 @@
 .footer__nav-list .footer__nav-item:hover {
   opacity: 1;
 }
-@media (min-width: 500px) {
+@media (min-width: 31.25rem) {
   .footer__nav-list {
     flex-wrap: wrap;
     flex-direction: unset;
