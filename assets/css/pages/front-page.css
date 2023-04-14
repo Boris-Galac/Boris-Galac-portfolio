@@ -79,6 +79,22 @@
   user-select: none;
   z-index: -1;
 }
+.creative-bg-text {
+  font-size: clamp(3rem, 5vw, 5rem);
+  top: 12rem;
+  font-family: serif;
+  font-weight: 400;
+  letter-spacing: 8px;
+  animation: creative-text 8s ease-in-out alternate infinite;
+}
+@keyframes creative-text {
+  from {
+    transform: translateX(80%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 .graphic-bg-text {
   font-size: clamp(6rem, 7vw, 8rem);
   top: 5rem;
@@ -241,10 +257,14 @@
 .skill-card {
   width: min(18vw, 80px);
   cursor: pointer;
-  transition: 0.3s;
+  /* dfsdf */
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transform: translateX(-100px);
 }
-.skill-card:hover {
-  scale: 1.3;
+.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* ////////// BIO SECTION */

@@ -30,6 +30,7 @@
           </div>
         </div>
         <p class="hero__background-text graphic-bg-text">graphic</p>
+        <p class="hero__background-text creative-bg-text">creative</p>
         <p class="hero__background-text wp-text">wordpress</p>
         <p class="hero__background-text frontend-bg-text">frontend</p>
         <p class="hero__background-text ui-bg-text">ux/ui</p>
@@ -48,7 +49,7 @@
         <div class="container">
           <h2 class="h2--heading mb-4" data-shadow="what i do">what i do</h2>
           <div class="offer__wrapper d-grid">
-            <figure class="offer-banner">
+            <figure class="offer-banner left">
               <img
                 src="wp-content/themes/boris-galac//assets/icons/web-design-animated-icon.gif"
                 alt="web design icon"
@@ -73,7 +74,7 @@
                 </a>
               </div>
             </figure>
-            <figure class="offer-banner">
+            <figure class="offer-banner right">
               <img
                 src="wp-content/themes/boris-galac//assets/icons/web-dev-animated-icon.gif"
                 alt="web dev icon"
@@ -97,7 +98,7 @@
                 /></a>
               </div>
             </figure>
-            <figure class="offer-banner">
+            <figure class="offer-banner left">
               <img
                 src="wp-content/themes/boris-galac//assets/icons/graphic-design-animated-icon.gif"
                 alt="graphic design icon"
@@ -235,9 +236,9 @@
             <img
               src="wp-content/themes/boris-galac//assets/images/bio__profile-img.png"
               alt="Bio profile image - Boris Galac"
-              class="bio__profile-img"
+              class="bio__profile-img left"
             />
-            <div class="bio-wrapper__col">
+            <div class="bio-wrapper__col right">
               <h3 class="h3--heading mb-2">Few words about me...</h3>
               <div class="bio__text mb-2">
                 <p class="p-text">
@@ -247,9 +248,9 @@
                 </p>
                 <br />
                 <p class="p-text">
-                  Proficient in design software such as Figma, Adobe XD, Sketch,
-                  Figma. Also i have strong skill to translate design to proper
-                  and efficient code and HTML, CSS, and JavaScript.
+                  Proficient in design software such as Figma, from Adobe; XD, Photoshop,
+                  Illustrator, InDesign. Also i have strong skill to translate design to proper
+                  and efficient code and HTML, CSS, and JavaScript and integrate with Wordpress or Webflow.
                 </p>
                 <br />
                 <p class="p-text">
@@ -259,7 +260,8 @@
                   constantly seeking to improve my skills.
                 </p>
                 <br />
-                <p class="p-text">Thanks for reading. 😀</p>
+                <p class="p-text mb-1">Thanks for reading. 😀</p>
+                <a href="<?php echo site_url('bio') ?>" class="link">See more about me</a>
               </div>
               <div class="bio__contact-wrapper p-2">
                 <div

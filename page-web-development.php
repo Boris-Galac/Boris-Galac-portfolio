@@ -10,111 +10,78 @@
       <!-- WEB DEV PROCESS SECTION -->
       <section class="work mb-8">
         <div class="container">
-          <h2 class="work--heading mb-4">How i make web design process</h2>
+          <h2 class="work--heading mb-4">How i make web development process</h2>
           <div class="work-wrapper d-grid">
-            <article class="work__row d-grid p-1">
+            <article class="work__row d-grid p-1 bottom" aria-label="this is article about mobile first approach">
               <div class="work__row-col">
                 <img
-                  src="/wp-content/themes/boris-galac/assets/images/design-img-1.png"
+                  src="/wp-content/themes/boris-galac/assets/images/web-dev-img-1.png"
                   alt="user flow image"
                   class="work__row-col-image"
                 />
               </div>
               <div class="work__row-col">
-                <h3 class="work--subheading mb-1">user flow</h3>
+                <h3 class="work--subheading mb-1">mobile first</h3>
                 <p class="p-text">
-                  With UX method 'User flow' i'm mapping out the steps a user
-                  takes to complete a task within a product.
+                The first step in web development is designing the website to be responsive across various devices.
+                That approach is called MOBILE FIRST.
                 </p>
                 <br />
                 <p class="p-text">
-                  By creating a clear user flow, designers can identify
-                  potential pain points and areas of improvement within their
-                  product.
+                My development process should focus on creating a user-friendly interface that adapts seamlessly to different screen sizes and resolutions.
                 </p>
                 <br />
                 <p class="p-text">
-                  A well-designed user flow can greatly enhance the overall user
-                  experience and make the product more intuitive to use.
+                Devs should also consider the website's speed and ensure that it loads quickly, especially on mobile devices.
+                Testing the website on different devices and browsers is crucial to ensure that it meets the required standards of responsiveness.
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1">
+            <article class="work__row d-grid p-1 bottom" aria-label="this is article about responsiveness in development">
               <div class="work__row-col order-2">
                 <img
-                  src="/wp-content/themes/boris-galac/assets/images/design-img-2.png"
+                  src="/wp-content/themes/boris-galac/assets/images/web-dev-img-2.png"
                   alt="sketching image"
                 />
               </div>
               <div class="work__row-col">
-                <h3 class="work--subheading mb-1">sketching</h3>
+                <h3 class="work--subheading mb-1">responsivenes for all devices</h3>
                 <p class="p-text">
-                  So, when I'm sketching, I'm basically quickly drawing rough
-                  ideas for a design.
+                Once the mobile design is complete, the next step is to create designs for larger devices such as tablets and desktops.
                 </p>
                 <br />
                 <p class="p-text">
-                  It's really helpful because it lets me explore different ideas
-                  and layouts before I commit to a final design.
+                Designers should consider the layout and typography to ensure that the website is easily readable on larger screens.
                 </p>
                 <br />
                 <p class="p-text">
-                  And by sketching out my ideas, I can communicate my vision
-                  more effectively to stakeholders and get feedback early on in
-                  the design process.
+                The design should be consistent with the mobile version, and features such as menus and buttons should be appropriately sized for tablet and desktop users.
+                Testing the website on different screen sizes and resolutions is crucial to ensure that it meets the required standards of design
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1">
+            <article class="work__row d-grid p-1 bottom" aria-label="this is article about high performance">
               <div class="work__row-col">
                 <img
-                  src="/wp-content/themes/boris-galac/assets/images/design-img-3.png"
+                  src="/wp-content/themes/boris-galac/assets/images/web-dev-work-bg.jpg"
                   alt="wireframe image"
                 />
               </div>
               <div class="work__row-col">
-                <h3 class="work--subheading mb-1">wireframe</h3>
+                <h3 class="work--subheading mb-1">performance</h3>
                 <p class="p-text">
-                  Wireframing is when I create low-fidelity representations of a
-                  design, usually using simple shapes and placeholders.
+                With the design complete, the next step is to build and produce the website using various programming languages and tools.
+
                 </p>
                 <br />
                 <p class="p-text">
-                  It's really helpful for me as a designer because it helps me
-                  plan out the layout and functionality of a design before
-                  adding visual details.
+                Developers should focus on creating clean, readable, and maintainable code that adheres to industry standards.
+
                 </p>
                 <br />
                 <p class="p-text">
-                  And if I create my wireframes well, they can help me identify
-                  possible usability issues and make sure the final design meets
-                  the needs of the user.
-                </p>
-              </div>
-            </article>
-            <article class="work__row d-grid p-1">
-              <div class="work__row-col order-2">
-                <img
-                  src="/wp-content/themes/boris-galac/assets/images/design-img-4.png"
-                  alt="high fidelity image"
-                />
-              </div>
-              <div class="work__row-col">
-                <h3 class="work--subheading mb-1">high fidelity</h3>
-                <p class="p-text">
-                  When I'm doing high-fidelity design, it means adding more
-                  visual details and polishing the design.
-                </p>
-                <br />
-                <p class="p-text">
-                  It's really helpful because it helps stakeholders better
-                  understand the look and feel of the final product.
-                </p>
-                <br />
-                <p class="p-text">
-                  By focusing on high-fidelity design, I can create more
-                  realistic prototypes that accurately reflect the final
-                  product.
+                The code should be optimized for performance, security, and scalability, and developers should also consider implementing best practices such as version control and automated testing.
+                The website should be thoroughly tested.
                 </p>
               </div>
             </article>
@@ -122,11 +89,10 @@
         </div>
       </section>
       <!---------------------------->
-
-      <!-- MY WORK SECTION -->
+      <!-- MY PROJECTS SECTION -->
       <section class="my-work">
         <div class="container">
-          <h2 class="work--heading mb-4">my web development work</h2>
+          <h2 class="work--heading mb-4">my web development projects</h2>
           <div class="my-work__wrapper">
             <!-- WEB DEV CARDS -->
             <?php

@@ -5,7 +5,35 @@
 .contact-form__input {
   display: grid;
   position: relative;
+  box-shadow: 0 0 1rem hsla(0, 0%, 0%, 0.6);
+  transition: 0.3s;
+  opacity: 0;
+}
+.contact-form__input:nth-of-type(1) {
+  transition-delay: 0.2s;
+}
+.contact-form__input:nth-of-type(2) {
+  transition-delay: 0.4s;
+}
+.contact-form__input:nth-of-type(3) {
+  transition-delay: 0.6s;
+}
+
+.contact-form__input input:focus,
+.contact-form__input textarea:focus {
+  box-shadow: 0 0 1rem rgb(2, 143, 251);
 }
 .contact-form__input label {
   position: absolute;
+}
+.contact-feedback {
+  color: var(--white);
+}
+.sucess {
+  border: 1px solid hsl(120, 77%, 36%);
+  background-color: hsla(130, 35%, 45%, 0.524);
+}
+.fail {
+  border: 1px solid hsl(0, 77%, 36%);
+  background-color: hsla(357, 58%, 43%, 0.524);
 }

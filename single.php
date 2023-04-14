@@ -2,12 +2,15 @@
 
 <main class="main pt-7 single-blog-main">
       <!-- BANNER SECTION -->
-      <?php 
-      pageBanner(array(
-          'title'=> 'blog',
-          'photo'=>'/wp-content/themes/boris-galac/assets/images/offer-img-5.jpg'
-      )); 
-      ?>
+      <section class="banner mb-4">
+        <figure class="banner-wrapper blog-banner--clr">
+          <img
+            src="<?php the_post_thumbnail_url('pageBanner') ?>"
+            alt="single blog generic image"
+          />
+          <h1 class="banner__heading" data-subheading="<?php the_field('banner_title') ?>"><?php the_field('banner_title') ?></h1>
+        </figure>
+      </section>
       <!------------------->
 
       <!-- BLOG SECTION -->
@@ -15,12 +18,10 @@
         <div class="container">
           <div class="blog__body d-grid mb-3">
             <div class="single-blog__wrapper">
-              <h2 class="h2--heading single-blog__heading">
+              <h2 class="h2--heading single-blog__heading mb-2">
                 <?php the_title() ?>
               </h2>
-              <p class="p-text">
                <?php the_content() ?>
-              </p>
             </div>
             <!-- SIDEBAR  -->
             <?php get_sidebar() ?>

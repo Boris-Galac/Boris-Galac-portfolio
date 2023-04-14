@@ -1,3 +1,13 @@
 .graph-des-main {
   background: var(--graph-des-clr);
 }
+.graph-des-main .my-work::after {
+  content: "";
+  position: absolute;
+  background: url("/wp-content/themes/boris-galac/assets/images/graph-des-work.png")
+    no-repeat center center/cover;
+  inset: 0;
+  background-attachment: fixed;
+  opacity: 0.1;
+  z-index: -1;
+}

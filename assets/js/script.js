@@ -238,3 +238,46 @@ const skillContent = [
       `,
   },
 ];
+
+/////////// REVEAL ON SCROLL
+
+// Observe the sections with the "left" and "right" classes
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Add the "show-left-right" class to the left and right sections
+      entry.target.classList.add("show-left-right");
+
+      // Stop observing the element after the animation has fired
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+const hiddenSectionsLeft = document.querySelectorAll(".left");
+hiddenSectionsLeft.forEach((el) => observer.observe(el));
+
+const hiddenSectionsRight = document.querySelectorAll(".right");
+hiddenSectionsRight.forEach((el) => observer.observe(el));
+const hiddenSectionsBottom = document.querySelectorAll(".bottom");
+hiddenSectionsBottom.forEach((el) => observer.observe(el));
+
+// Observe the skill cards with the "skill-card" class
+const observerSkillCards = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      // Calculate the delay based on the card's index
+      const delay = index * 0.1;
+
+      // Add the "visible" class to the skill card with the delay
+      entry.target.style.transitionDelay = `${delay}s`;
+      entry.target.classList.add("visible");
+
+      // Stop observing the element after the animation has fired
+      observerSkillCards.unobserve(entry.target);
+    }
+  });
+});
+
+const skillCards = document.querySelectorAll(".skill-card");
+skillCards.forEach((skillCard) => observerSkillCards.observe(skillCard));

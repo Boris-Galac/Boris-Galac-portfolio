@@ -1,85 +1,3 @@
-.my-work-card {
-  position: relative;
-  overflow: hidden;
-}
-.my-work-card::after {
-  content: "";
-  position: absolute;
-}
-.my-work-card__img-wrapper {
-  position: relative;
-  display: grid;
-  place-items: center;
-  background-color: hsl(194, 47%, 71%);
-  border-radius: 0.3rem;
-  margin-bottom: 0.5rem;
-}
-.my-work-card__img-wrapper::after {
-  content: "";
-  position: absolute;
-}
-
-/*///////////// WEB CARD */
-
-.web-card {
-  position: relative;
-  width: max-content;
-  margin-inline: auto;
-  height: 25rem;
-  border: 3px solid rgb(255, 255, 255);
-  overflow: hidden;
-  border-radius: 5px;
-  transition: all 0.7s ease-in-out;
-}
-.web-card:hover {
-  transform: perspective(800px) rotateX(20deg) rotateY(5deg) rotateZ(10deg)
-    skewX(-3deg) skewX(-3deg) scale(1.4);
-  box-shadow: 0 10px 30px rgb(106, 98, 94);
-}
-.web-card:hover .web-card__img {
-  animation: scroll 2s alternate infinite linear;
-}
-.web-card:hover::after {
-  content: "Created by Boris Galac";
-  position: absolute;
-  display: block;
-  left: 0;
-  right: 0;
-  top: 0;
-  padding: 1.5rem;
-  background: rgba(0, 0, 0, 0.437);
-  color: white;
-  border-radius: 0 0 10px 10px;
-  animation: description 3s forwards ease-in-out;
-}
-@keyframes description {
-  0% {
-    opacity: 0;
-  }
-  15%,
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes scroll {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-45%);
-  }
-}
-@media (max-width: 400px) {
-  .web-card {
-    width: 7.5rem;
-    height: 15rem;
-  }
-}
-
 /*///////////  BLOG CARD */
 
 .blog__card {
@@ -211,21 +129,31 @@
   mix-blend-mode: overlay;
 }
 .contact-socials__card-1 .contact-socials__card-back::after {
-  background: url("/src/assets/images/social-contact-back-1.png") no-repeat
-    center center/cover;
+  background: url("/wp-content/themes/boris-galac/assets/images/social-contact-back-1.png")
+    no-repeat center center/cover;
+  mix-blend-mode: overlay;
   opacity: 0.5;
 }
 .contact-socials__card-2 .contact-socials__card-back::after {
-  background: url("/src/assets/images/social-contact-back-2.png") no-repeat
-    center center/cover;
+  background: url("/wp-content/themes/boris-galac/assets/images/social-contact-back-2.png")
+    no-repeat center center/cover;
   opacity: 0.5;
 }
 .contact-socials__card-3 .contact-socials__card-back::after {
-  background: url("/src/assets/images/social-contact-back-3.png") no-repeat
-    center center/cover;
+  background: url("/wp-content/themes/boris-galac/assets/images/social-contact-back-3.png")
+    no-repeat center center/cover;
   opacity: 0.5;
 }
+/*/////////// PROJECT CARD GLOBALS  */
 
+.project-card-info__label {
+  text-transform: capitalize;
+  color: var(--neutral-500);
+}
+.project-card-info__wrapper {
+  position: relative;
+  border-radius: 4px;
+}
 /*///////////// WEB DEV CARD */
 
 .web-dev-card {
@@ -282,9 +210,7 @@
 .web-dev-card__info-tech-tags-wrapper {
   flex-wrap: wrap;
 }
-.web-dev-card__info-label {
-  text-transform: capitalize;
-}
+
 .web-dev-card .p-text {
   line-height: 1.4;
   font-weight: 200;
@@ -307,4 +233,35 @@
   gap: 1rem;
   justify-content: center;
   opacity: 1;
+}
+
+/*///////////// WEB DES CARD */
+
+.my-des-card {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.my-des-card .project-card-info__wrapper {
+  flex: 1 1 auto;
+}
+.my-des-card .project-card-info__wrapper:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.my-des-card .project-card-info__wrapper:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*///////////// WEB DES CARD */
+
+.my-graph-card {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.project-card-info__tech-pill {
+  padding: 0.3rem 1rem;
+  border: 2px solid black;
+  color: var(--white);
+  text-transform: capitalize;
+  background: rgba(0, 0, 0, 0.387);
+  border-radius: 100vmax;
+  width: max-content;
+  user-select: none;
 }

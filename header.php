@@ -17,7 +17,7 @@
       name="keywords"
       content="boris galac, web design, web development, graphic design, portfolio, collaboration, job"
     />
-    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/wp-content/themes/boris-galac/favicon-16x16.png" type="image/x-icon" />
     <?php wp_head(); ?>
   </head>
 
@@ -105,7 +105,7 @@
           </li>
         </ul>
       </nav>
-      <div class="top-bar flex-row-center p-1">
+      <div class="top-bar flex-row-center p-1 px-2">
         <a href="<?php echo site_url('') ?>">
             <figure class="top-bar__logo">
               <img
@@ -124,10 +124,10 @@
               alt="search icon"
             />
           </buttton>
-          <label class="switch" role="switch" aria-checked="false" tabindex="0">
+          <!-- <label class="switch" role="switch" aria-checked="false" tabindex="0">
             <input type="checkbox" />
             <span class="slider"></span>
-          </label>
+          </label> -->
         </div>
       </div>
     </header>

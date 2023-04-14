@@ -12,7 +12,7 @@
         <div class="container">
           <h2 class="work--heading mb-4">How i make web design process</h2>
           <div class="work-wrapper d-grid">
-            <article class="work__row d-grid p-1">
+            <article class="work__row d-grid p-1 bottom"  aria-label="this is article about user flow">
               <div class="work__row-col">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/design-img-1.png"
@@ -39,7 +39,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1">
+            <article class="work__row d-grid p-1 bottom" aria-label="this is article about sketching">
               <div class="work__row-col order-2">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/design-img-2.png"
@@ -65,7 +65,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1">
+            <article class="work__row d-grid p-1 bottom" aria-label="this is article about wireframing">
               <div class="work__row-col">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/design-img-3.png"
@@ -92,7 +92,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1">
+            <article class="work__row d-grid p-1 bottom" aria-label="this is article about high fidelity in design">
               <div class="work__row-col order-2">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/design-img-4.png"
@@ -126,21 +126,23 @@
       <!-- MY WORK SECTION -->
       <section class="my-work">
         <div class="container">
-          <h2 class="work--heading mb-4">my web design work</h2>
-          <div class="my-work__wrapper">
-            <div class="my-work__inner-wrapper d-grid">
-              <!-- <div class="my-work-card">
-                <div class="my-work-card__img-wrapper p-2">
-                  <img
-                    src="/wp-content/themes/boris-galac/assets/images/card-img.png"
-                    alt="my work image"
-                  />
-                </div>
-                <h3 class="h3--heading my-work-card--heading">
-                  My Design work
-                </h3>
-              </div> -->
-            </div>
+          <h2 class="work--heading mb-4">my web design projects</h2>
+          <div class="my-work__wrapper d-grid gap-2">
+              <!-- WEB DESIGN CARDS -->
+            <?php
+            $args = array(
+                'post_type'=> 'web_design',
+                'posts_per_page'=> -1,
+               );
+               $the_query = new WP_Query($args);
+            if($the_query->have_posts()){
+            while( $the_query->have_posts()){
+                $the_query->the_post();
+            get_template_part('template-parts/content', 'web-des-project'); 
+            }}
+
+?>
+            <!------------------->
           </div>
         </div>
       </section>

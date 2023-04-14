@@ -13,6 +13,9 @@
 .p-4 {
   padding: 4rem;
 }
+.px-2 {
+  padding-inline: 2rem;
+}
 .px-05 {
   padding-inline: 0.5rem;
 }
@@ -60,6 +63,9 @@
 }
 .mb-8 {
   margin-bottom: 8rem;
+}
+.gap-05 {
+  gap: 0.5rem;
 }
 .gap-1 {
   gap: 1rem;

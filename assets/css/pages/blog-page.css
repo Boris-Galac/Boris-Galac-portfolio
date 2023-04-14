@@ -25,7 +25,8 @@
 
 /* SINGLE BLOG PAGE */
 
-.single-blog-main {
+.single-blog-main .p-text > * {
+  color: var(--white);
 }
 .single-blog__heading {
   text-transform: capitalize;

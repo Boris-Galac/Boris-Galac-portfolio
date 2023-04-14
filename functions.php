@@ -26,6 +26,7 @@ function wpdocs_setup() {
     add_theme_support( 'starter-content' );
     add_theme_support( 'wp-pagenavi' ); // Add this line to enable wp-pagenavi plugin.
     add_image_size('pageBanner', 1400, 360, true);
+    add_image_size('web-design', 500, 860, true);
 }
 
 
@@ -42,15 +43,6 @@ function output_title(){
         the_title();
     }
 }
-// function get_last_part_of_url() {
-//     global $wp; // Access the $wp global variable
-    
-//     $current_url = add_query_arg( array(), $wp->request ); // Get the current URL
-//     $last_part = basename( rtrim( $current_url, '/' ) ); // Get the last part of the URL
-
-//     // Display the last part of the URL
-//     echo $last_part;
-// }
 
 ////// check is blog page
 
@@ -128,4 +120,7 @@ function pageBanner($args = NULL) {
         }
     }
 }
+
+//////// REMOVE P TAG AROUND THE_CONTENT 
+
 
