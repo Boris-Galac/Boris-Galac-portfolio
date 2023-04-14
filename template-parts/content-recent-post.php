@@ -1,21 +1,23 @@
 <li class="sidebar__blog-card p-05">
                     <div class="sidebar__blog-img-wrapper">
+                      <a href="<?php the_permalink() ?>" class="width-100">
                       <img
-                        src="/wp-content/themes/boris-galac/assets/images/recent-blog__img.jpg"
+                        src="<?php the_post_thumbnail_url() ?>"
                         alt="sidebar blog image"
                         class="sidebar__blog-img-wrapper"
                       />
+                    </a>
                     </div>
                     <div class="sidebar__blog-body">
                       <div
                         class="sidebar__blog-meta-info flex-row-center mb-05"
                       >
                         <span class="sidebar__blog-meta-date"
-                          >12. June 2023</span
+                          ><?php the_time('F j, Y') ?></span
                         >
                         <span class="sidebar__blog-meta-separator"></span>
                         <span class="sidebar__blog-meta-category"
-                          >Category</span
+                          ><?php the_field('category_blog') ?></span
                         >
                       </div>
                       <div class="sidebar__blog-text">
@@ -29,7 +31,7 @@
                         </p>
                       </div>
                       <a
-                        href="#"
+                        href="<?php the_permalink() ?>"
                         class="see-more-link"
                         aria-label="Link to web design section"
                         >Read more

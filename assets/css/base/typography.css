@@ -146,3 +146,11 @@ select {
   font-size: 10px;
   text-transform: uppercase;
 }
+.search--heading {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  font-size: clamp(1.5rem, 7vw, 3rem);
+  width: max-content;
+}

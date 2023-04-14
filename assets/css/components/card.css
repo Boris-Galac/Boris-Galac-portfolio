@@ -9,6 +9,10 @@
   position: relative;
   bottom: 2rem;
 }
+.blog__card-header-wrapper > a {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
 .blog__card-header-wrapper > img {
   border-radius: 0.5rem;
   width: 100%;

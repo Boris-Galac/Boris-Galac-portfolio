@@ -99,7 +99,7 @@ function pageBanner($args = NULL) {
             ?>
             <section class="banner mb-4">
                 <figure class="banner-wrapper">
-                    <img src="<?php echo $args['photo']; ?>" alt="image" class="banner__content">
+                    <img src="<?php echo $args['photo']; ?>" alt="image" class="banner__content width-100">
                     <h1 class="banner__heading" data-subheading="<?php echo $args['title'] ?>">
                         <?php echo $args['title'] ?>
                     </h1>

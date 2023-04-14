@@ -1,9 +1,11 @@
 <article class="blog__card p-1 d-grid">
                 <div class="blog__card-header-wrapper">
-                  <img
-                    src="/wp-content/themes/boris-galac/assets/images/blog-card-img.jpg"
-                    alt="blog card image"
-                  />
+                  <a href="<?php the_permalink() ?>">
+                    <img
+                      src="<?php the_post_thumbnail_url('pageBanner') ?>"
+                      alt="blog card image"
+                    />
+                  </a>
                   <div class="blog__card-meta-info flex-row-center">
                     <span class="blog__card-date"><?php the_time('F j, Y') ?></span
                     ><span class="separator-line"></span

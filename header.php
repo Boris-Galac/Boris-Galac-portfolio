@@ -28,7 +28,7 @@
           <li class="nav__item" data-title="Web Design">
             <a
               href="<?php echo site_url('web-design') ?>"
-              class="nav__link grid-center"
+              class="nav__link grid-center <?php if(is_page('web-design')) echo 'current';  ?>"
               aria-label="web design"
             >
               <img
@@ -42,7 +42,7 @@
           <li class="nav__item" data-title="Web Development">
             <a
               href="<?php echo site_url('web-development') ?>"
-              class="nav__link grid-center"
+              class="nav__link grid-center <?php if(is_page('web-development')) echo 'current';  ?>"
               aria-label="web development"
               ><img
                 src="/wp-content/themes/boris-galac/assets/icons/header-icons/mobile/dev-icon.svg"
@@ -55,7 +55,7 @@
           <li class="nav__item" data-title="Graphic Design">
             <a
               href="<?php echo site_url('graphic-design') ?>"
-              class="nav__link grid-center"
+              class="nav__link grid-center <?php if(is_page('graphic-design')) echo 'current';  ?>"
               aria-label="graphic design"
               ><img
                 src="/wp-content/themes/boris-galac/assets/icons/header-icons/mobile/graphic-design-icon.svg"
@@ -66,7 +66,7 @@
             </a>
           </li>
           <li class="nav__item" data-title="Home">
-            <a href="<?php echo site_url() ?>" class="nav__link grid-center" aria-label="home"
+            <a href="<?php echo site_url() ?>" class="nav__link grid-center <?php if(is_front_page()) echo 'current';  ?>" aria-label="home"
               ><img
                 src="/wp-content/themes/boris-galac/assets/icons/header-icons/mobile/home-icon.svg"
                 aria-hidden="true"
@@ -74,7 +74,7 @@
             /></a>
           </li>
           <li class="nav__item" data-title="Blog">
-            <a href="<?php echo site_url('blog') ?>" class="nav__link grid-center" aria-label="blog"
+            <a href="<?php echo site_url('blog') ?>" class="nav__link grid-center <?php if(is_blog()) echo 'current';  ?>" aria-label="blog"
               ><img
                 src="/wp-content/themes/boris-galac/assets/icons/header-icons/mobile/blog-icon.svg"
                 aria-hidden="true"
@@ -84,7 +84,7 @@
             </a>
           </li>
           <li class="nav__item" data-title="Bio">
-            <a href="<?php echo site_url('bio') ?>" class="nav__link grid-center" aria-label="Bio"
+            <a href="<?php echo site_url('bio') ?>" class="nav__link grid-center <?php if(is_page('bio')) echo 'current';  ?>" aria-label="Bio"
               ><img
                 src="/wp-content/themes/boris-galac/assets/icons/header-icons/mobile/profile-icon.svg"
                 aria-hidden="true"
@@ -94,7 +94,7 @@
             </a>
           </li>
           <li class="nav__item" data-title="Contact">
-            <a href="<?php echo site_url('contact') ?>" class="nav__link grid-center" aria-label="Contact"
+            <a href="<?php echo site_url('contact') ?>" class="nav__link grid-center <?php if(is_page('contact')) echo 'current';  ?>" aria-label="Contact"
               ><img
                 src="/wp-content/themes/boris-galac/assets/icons/header-icons/mobile/phone-icon.svg"
                 aria-hidden="true"

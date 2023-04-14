@@ -1,15 +1,12 @@
-.blog-main {
-}
 .blog-main .banner::after {
   background: none !important;
-}
-.blog {
 }
 .blog__body {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
 .blog__wrapper {
+  position: relative;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: max-content;
   column-gap: 2rem;

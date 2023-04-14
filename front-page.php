@@ -63,7 +63,7 @@
               <div class="offer-banner__body">
                 <h3 class="offer-banner__heading">web design</h3>
                 <a
-                  href="web-design.html"
+                  href="<?php echo site_url('web-design') ?>"
                   class="see-more-link"
                   aria-label="Link to web design section"
                   >See my work
@@ -88,7 +88,7 @@
               <div class="offer-banner__body">
                 <h3 class="offer-banner__heading">web development</h3>
                 <a
-                  href="web-development.html"
+                  href="<?php echo site_url('web-development') ?>"
                   class="see-more-link"
                   aria-label="Link to web development section"
                   >See my work
@@ -112,7 +112,7 @@
               <div class="offer-banner__body">
                 <h3 class="offer-banner__heading">graphic design</h3>
                 <a
-                  href="graphic-design.html"
+                  href="<?php echo site_url('graphic-design') ?>"
                   class="see-more-link"
                   aria-label="Link to graphic design section"
                   >See my work

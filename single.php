@@ -8,7 +8,7 @@
             src="<?php the_post_thumbnail_url('pageBanner') ?>"
             alt="single blog generic image"
           />
-          <h1 class="banner__heading" data-subheading="<?php the_field('banner_title') ?>"><?php the_field('banner_title') ?></h1>
+          <h1 class="banner__heading" data-subheading="blog">blog</h1>
         </figure>
       </section>
       <!------------------->
