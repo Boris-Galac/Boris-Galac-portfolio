@@ -41,6 +41,7 @@
   inset: 0;
   z-index: 1000;
   background: rgba(15, 25, 30, 0.6);
+  backdrop-filter: blur(10px);
   cursor: pointer;
 }
 .overlay[aria-hidden="true"] {
@@ -118,4 +119,20 @@
     opacity: 1;
     pointer-events: visible;
   }
+}
+/* REVEAL ON SCROLL */
+.left,
+.right {
+  opacity: 0;
+  transition: 1s ease-out;
+}
+.right {
+  transform: translateX(50%);
+}
+.left {
+  transform: translateX(-50%);
+}
+.show-left-right {
+  opacity: 1;
+  transform: translateX(0);
 }

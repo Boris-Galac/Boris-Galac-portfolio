@@ -12,7 +12,7 @@
         <div class="container">
           <h2 class="work--heading mb-4">How i make graphic design process</h2>
           <div class="work-wrapper d-grid">
-            <article class="work__row d-grid p-1 bottom" aria-label="this is article about research">
+            <article class="work__row d-grid p-1 right" aria-label="this is article about research">
               <div class="work__row-col">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/graphic-des-img-1.png"
@@ -33,7 +33,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1 bottom" aria-label="this is article about concept development">
+            <article class="work__row d-grid p-1 left" aria-label="this is article about concept development">
               <div class="work__row-col order-2">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/graphic-des-img-2.png"
@@ -54,7 +54,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1 bottom"  aria-label="this is article about design execution">
+            <article class="work__row d-grid p-1 right"  aria-label="this is article about design execution">
               <div class="work__row-col">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/graphic-des-img-3.png"
@@ -74,7 +74,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1 bottom"  aria-label="this is article about finalization">
+            <article class="work__row d-grid p-1 left"  aria-label="this is article about finalization">
               <div class="work__row-col order-2">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/graphic-des-img-4.png"

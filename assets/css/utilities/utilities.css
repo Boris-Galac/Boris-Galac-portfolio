@@ -176,24 +176,19 @@
   clip-path: polygon(0% 2%, 100% 0, 100% 100%, 0% 100%);
   padding-block: 8rem;
 }
-
-/* REVEAL ON SCROLL */
-.left,
-.right,
-.bottom {
-  opacity: 0;
-  transition: 2s;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1rem;
+  overflow: hidden;
 }
-.right {
-  transform: translateX(100%);
+.gallery a {
+  height: 100%;
+  width: 100%;
 }
-.left {
-  transform: translateX(-100%);
-}
-.bottom {
-  transform: translateY(50%);
-}
-.show-left-right {
-  opacity: 1;
-  transform: translateX(0);
+.gallery img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }

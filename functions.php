@@ -5,6 +5,8 @@ function theme_source_files(){
     wp_enqueue_style('main-css', get_theme_file_uri('assets/css/style.css'));
     wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js', array(), '3.11.4', true );
     wp_enqueue_script( 'typed-js', 'https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js', array(), '2.0.14', true );
+    wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1', true );
+    wp_enqueue_script('jquery-lightbox', get_theme_file_uri('assets/js/simple-lightbox.jquery.min.js'), array(), false, true);
     wp_enqueue_script('main-js', get_theme_file_uri('assets/js/script.js'), array(), false, true);
 }
 

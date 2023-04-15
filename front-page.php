@@ -10,7 +10,7 @@
               aria-label="Image of Boris Galac"
             ></div>
             <div class="hero__headline-wrapper d-grid">
-              <div class="hero__headline__inner-wrapper d-grid mb-2">
+              <div class="hero__headline__inner-wrapper d-grid mb-1">
                 <p class="hero__green-text flex-row-center">
                   🖐 Hi! My name is
                 </p>

@@ -10,7 +10,7 @@
 
 .blob {
   aspect-ratio: 1;
-  width: min(70vw, 400px);
+  width: min(30vw, 400px);
   overflow: hidden;
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
   background: url("/wp-content/themes/boris-galac/assets/images/avatar.png")
@@ -42,7 +42,7 @@
 .hero__wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 43%;
+  top: 50%;
   left: 50%;
   width: max-content;
   gap: 10vw;
@@ -154,21 +154,24 @@
   }
 }
 .scroll-down {
-  background: transparent;
-  position: absolute;
-  bottom: 8rem;
-  animation: scroll-down 1s ease-in-out alternate infinite;
+  display: none;
 }
-@keyframes scroll-down {
-  from {
-    transform: translateY(15px);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-
 @media (min-width: 60rem) {
+  .scroll-down {
+    display: block;
+    background: transparent;
+    position: absolute;
+    bottom: 8rem;
+    animation: scroll-down 1s ease-in-out alternate infinite;
+  }
+  @keyframes scroll-down {
+    from {
+      transform: translateY(15px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
   .flex-wrap {
     flex-direction: row;
   }
@@ -226,7 +229,7 @@
   position: absolute;
   z-index: 2;
   right: 0;
-  bottom: 5.5rem;
+  bottom: 0;
   display: grid;
   place-content: center;
   height: 11vh;
@@ -250,7 +253,7 @@
 .skillset__skill-card-wrapper {
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
   max-width: 25rem;
   margin-inline: auto;
 }
@@ -330,5 +333,13 @@
   .socials {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+  .hero__wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    width: max-content;
+    gap: 10vw;
   }
 }

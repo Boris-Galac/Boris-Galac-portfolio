@@ -32,4 +32,5 @@
 /* layout */
 
 @import "utilities/js-classes.css";
+@import "utilities/lightbox-jquery.css";
 @import "utilities/utilities.css";

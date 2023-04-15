@@ -1,9 +1,13 @@
 .banner img {
   object-position: 32%;
 }
-.bio .h2--heading {
+.bio-main .h2--heading {
   text-transform: capitalize;
   line-height: 1;
+  font-size: 2rem;
+  text-align: end;
+  color: var(--neutral-300);
+  margin-right: 1rem;
 }
 .bio-row {
   position: relative;
@@ -22,16 +26,17 @@
   max-width: 20rem;
 }
 .bio-row-2 {
-  gap: 4rem;
+  gap: 7rem;
 }
 .bio-row-2__img-wrapper {
   position: relative;
-  height: 26vh;
+  height: 49vh;
   aspect-ratio: 1/2;
   width: 18rem;
 }
 .bio-row-2__img-wrapper > img {
   position: absolute;
+  bottom: 9rem;
 }
 .bio-row-2__img-wrapper > img:nth-child(2) {
   right: 0;
@@ -39,7 +44,7 @@
   width: 50%;
 }
 .bio-row-2__img-wrapper > img:nth-child(3) {
-  bottom: -8%;
+  bottom: -19%;
 }
 .bio__contact-me {
   position: relative;

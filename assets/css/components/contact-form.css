@@ -60,12 +60,6 @@
 .contact-form__input textarea:focus {
   background-color: var(--black);
 }
-/* .contact-form__input input:focus + label,
-.contact-form__input textarea:focus + label {
-  top: -2rem;
-  border-radius: 100vmax;
-  color: var(--white);
-} */
 .focus-label-animation {
   top: -2rem !important;
   color: var(--white) !important;

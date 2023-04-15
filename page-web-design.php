@@ -12,7 +12,7 @@
         <div class="container">
           <h2 class="work--heading mb-4">How i make web design process</h2>
           <div class="work-wrapper d-grid">
-            <article class="work__row d-grid p-1 bottom"  aria-label="this is article about user flow">
+            <article class="work__row d-grid p-1 left"  aria-label="this is article about user flow">
               <div class="work__row-col">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/design-img-1.png"
@@ -39,7 +39,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1 bottom" aria-label="this is article about sketching">
+            <article class="work__row d-grid p-1 right" aria-label="this is article about sketching">
               <div class="work__row-col order-2">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/design-img-2.png"
@@ -65,7 +65,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1 bottom" aria-label="this is article about wireframing">
+            <article class="work__row d-grid p-1 left" aria-label="this is article about wireframing">
               <div class="work__row-col">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/design-img-3.png"
@@ -92,7 +92,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1 bottom" aria-label="this is article about high fidelity in design">
+            <article class="work__row d-grid p-1 right" aria-label="this is article about high fidelity in design">
               <div class="work__row-col order-2">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/design-img-4.png"

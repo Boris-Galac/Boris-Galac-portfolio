@@ -12,7 +12,7 @@
         <div class="container">
           <h2 class="work--heading mb-4">How i make web development process</h2>
           <div class="work-wrapper d-grid">
-            <article class="work__row d-grid p-1 bottom" aria-label="this is article about mobile first approach">
+            <article class="work__row d-grid p-1 left" aria-label="this is article about mobile first approach">
               <div class="work__row-col">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/web-dev-img-1.png"
@@ -37,7 +37,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1 bottom" aria-label="this is article about responsiveness in development">
+            <article class="work__row d-grid p-1 right" aria-label="this is article about responsiveness in development">
               <div class="work__row-col order-2">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/web-dev-img-2.png"
@@ -60,7 +60,7 @@
                 </p>
               </div>
             </article>
-            <article class="work__row d-grid p-1 bottom" aria-label="this is article about high performance">
+            <article class="work__row d-grid p-1 left" aria-label="this is article about high performance">
               <div class="work__row-col">
                 <img
                   src="/wp-content/themes/boris-galac/assets/images/web-dev-work-bg.jpg"

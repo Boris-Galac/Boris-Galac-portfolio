@@ -32,9 +32,9 @@
           <!-------------------------->
           <section class="contact-socials mb-8">
             <h2 class="work--subheading mb-4">Also you can contact by:</h2>
-            <div class="contact-socials__wrapper flex-center gap-4 bottom">
+            <div class="contact-socials__wrapper flex-center gap-4">
               <div
-                class="contact-socials__card contact-socials__card-1"
+                class="contact-socials__card contact-socials__card-1 right"
                 aria-label="contact card for facebook"
               >
                 <div class="contact-socials__card-inner-wrapper">
@@ -53,7 +53,7 @@
                 </div>
               </div>
               <div
-                class="contact-socials__card contact-socials__card-2"
+                class="contact-socials__card contact-socials__card-2 left"
                 aria-label="contact card for phone"
               >
                 <div class="contact-socials__card-inner-wrapper">
@@ -72,7 +72,7 @@
                 </div>
               </div>
               <div
-                class="contact-socials__card contact-socials__card-3"
+                class="contact-socials__card contact-socials__card-3 right"
                 aria-label="contact card for gmail"
               >
                 <div class="contact-socials__card-inner-wrapper">

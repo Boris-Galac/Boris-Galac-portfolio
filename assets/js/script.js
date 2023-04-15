@@ -259,8 +259,6 @@ hiddenSectionsLeft.forEach((el) => observer.observe(el));
 
 const hiddenSectionsRight = document.querySelectorAll(".right");
 hiddenSectionsRight.forEach((el) => observer.observe(el));
-const hiddenSectionsBottom = document.querySelectorAll(".bottom");
-hiddenSectionsBottom.forEach((el) => observer.observe(el));
 
 // Observe the skill cards with the "skill-card" class
 const observerSkillCards = new IntersectionObserver((entries) => {
@@ -296,4 +294,11 @@ inputField.forEach((input) => {
       e.target.nextElementSibling.classList.remove("focus-label-animation");
     }
   });
+});
+
+////// LIGHTBOX
+
+document.addEventListener("DOMContentLoaded", function () {
+  const gallery = document.querySelectorAll(".gallery a");
+  const simpleLightbox = new SimpleLightbox(gallery, { loop: true });
 });

@@ -1,6 +1,16 @@
 <div class="my-des-card d-grid gap-1 p-1 bottom">
                 <div class="my-des-card__header flex-wrapper flex-center gap-3">
-                    <?php the_content() ?>
+                <div class="gallery my-des-card__header flex-wrapper flex-center gap-3">
+                    <a href="<?php the_field('image_1') ?>">
+                      <img src="<?php the_field('image_1') ?>">
+                    </a>
+                    <a href="<?php the_field('image_2') ?>">
+                      <img src="<?php the_field('image_2') ?>">
+                    </a>
+                    <a href="<?php the_field('image_3') ?>">
+                      <img src="<?php the_field('image_3') ?>">
+                    </a>
+                </div>
                 </div>
                 <div class="my-des-card__body flex-wrapper gap-1">
                     <div class="project-card-info__wrapper p-1 width-100" aria-label="project name">

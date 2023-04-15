@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     ></textarea>
                     <label for="textarea">Leave your message</label>
                   </div>
-                  <button class="contact-form__btn bottom" type="submit">
+                  <button class="contact-form__btn left" type="submit">
                     <div class="svg-wrapper-1">
                       <div class="svg-wrapper">
                         <svg

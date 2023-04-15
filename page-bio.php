@@ -25,12 +25,12 @@
                 </p>
             </div>
           </article>
-          <h3 class="work--heading mb-2">hobbies and free time</h3>
+          <h3 class="work--heading mb-2">hobbies and personal</h3>
           <article class="bio-row bio-row-2 mb-3 d-grid p-1">
             <div class="bio__img-wrapper bio-row-2__img-wrapper order-2">
               <img src="/wp-content/themes/boris-galac/assets/images/jogging.jpg" alt="jogging image" class="left">
               <img src="/wp-content/themes/boris-galac/assets/images/drumming.jpg" alt="drumming image" class="right">
-              <img src="/wp-content/themes/boris-galac/assets/images/christianity.jpg" alt="christianity image" class="bottom">
+              <img src="/wp-content/themes/boris-galac/assets/images/christianity.jpg" alt="christianity image" class="left">
               <img src="/wp-content/themes/boris-galac/assets/images/shapes.png" alt="shapes image">
             </div>
             <div class="bio__text-wrapper left">
@@ -47,9 +47,9 @@ Another hobby that I like to mention is running. Running has also become a part 
             </div>
           </article>
           <h3 class="work--heading mb-1">my passion about code & design</h3>
-          <article class="bio-row bio-row-3 mb-3 d-grid p-1">
+          <article class="bio-row bio-row-3 mb-3 d-grid p-1 gap-2">
             <div class="bio__img-wrapper bio-row-3__img-wrapper">
-              <img src="/wp-content/themes/boris-galac/assets/images/design-and-code.png" alt="design and code image" class="bottom">
+              <img src="/wp-content/themes/boris-galac/assets/images/design-and-code.png" alt="design and code image" class="right">
             </div>
             <div class="bio__text-wrapper left">
               <p class="p-text">
@@ -73,7 +73,7 @@ Another hobby that I like to mention is running. Running has also become a part 
                 </p>
             </div>
           </article>
-          <div class="bio__contact-me d-flex gap-1 flex-row-center p-2 mb-4 bottom">
+          <div class="bio__contact-me d-flex gap-1 flex-row-center p-2 mb-4 left">
             <p class="p-text">If you liked my profile, you can contact me</p><button class="secondary-btn">
               <a href="<?php echo site_url('contact') ?>">Contact me</a></button>
           </div>
