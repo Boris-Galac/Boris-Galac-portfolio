@@ -281,3 +281,19 @@ const observerSkillCards = new IntersectionObserver((entries) => {
 
 const skillCards = document.querySelectorAll(".skill-card");
 skillCards.forEach((skillCard) => observerSkillCards.observe(skillCard));
+
+///// WHEN INPUT HAS ANY VALUE
+
+const inputField = document.querySelectorAll(".input");
+const label = document.querySelector(".contact-form__input label");
+const textarea = document.querySelector(".contact-form__input textarea");
+
+inputField.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    if (e.target.value) {
+      e.target.nextElementSibling.classList.add("focus-label-animation");
+    } else {
+      e.target.nextElementSibling.classList.remove("focus-label-animation");
+    }
+  });
+});

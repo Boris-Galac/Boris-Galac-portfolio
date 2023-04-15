@@ -16,7 +16,7 @@
                         <h3 class="my-des-card__figma-tech">Figma</h3>
                     </div>
                     <div class="project-card-info__wrapper p-1 grid-center" aria-label="view on figma">
-                        <a href="<?php the_field('link_to_figma') ?>" class="secondary-btn d-flex gap-05">View on Figma <img src="/wp-content/themes/boris-galac/assets/icons/logos-figma.svg" aria-hidden="true"></a>
+                        <a href="<?php the_field('link_to_figma') ?>" class="secondary-btn d-flex gap-05" target="_blank">View on Figma <img src="/wp-content/themes/boris-galac/assets/icons/logos-figma.svg" aria-hidden="true"></a>
                     </div>
                 </div>
               </div>

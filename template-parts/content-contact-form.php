@@ -13,22 +13,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $headers .= "Content-Type: text/plain; charset=UTF-8\n";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo '<p class="contact-feedback sucess p-2">Your message has been sent successfully.</p>';
+        echo '<p class="contact-feedback success p-2">Your message has been sent successfully.</p>';
     } else {
         echo '<p class="contact-feedback fail p-2">There was a problem sending your message. Please try again later.</p>';
     }
 }
 ?>
                   <div class="contact-form__input right">
-                    <input type="text" name="name" id="name" />
+                    <input class="input" type="text" name="name" id="name" />
                     <label for="name">Your full name</label>
                   </div>
                   <div class="contact-form__input right">
-                    <input type="email" name="email" id="email" />
+                    <input class="input" type="email" name="email" id="email" />
                     <label for="mail">Email</label>
                   </div>
                   <div class="contact-form__input right">
-                    <textarea
+                    <textarea class="input"
                       name="textarea"
                       id="textarea"
                       cols="30"

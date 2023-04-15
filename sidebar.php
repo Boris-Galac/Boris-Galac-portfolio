@@ -1,12 +1,21 @@
 <aside class="sidebar p-1">
               <div class="sidebar__search d-grid">
-                <form class="sidebar__search-form d-flex mb-1">
+                <form 
+                class="sidebar__search-form d-flex mb-1"
+                method="get"
+action="<?php echo home_url() ?>"
+role="search"
+                >
                   <input
                     type="search"
                     class="sidebar__input"
                     placeholder="Search for blogs..."
+                    name="s"
+        value="<?php echo get_search_query(); ?>"
+        aria-label="Search for blogs"
+        required
                   />
-                  <buttton class="sidebar__search-submit flex-center p-05">
+                  <buttton type="submit" class="sidebar__search-submit flex-center p-05">
                     <img
                       src="/wp-content/themes/boris-galac/assets/icons/header-icons/search-icon.svg"
                       alt="search icon"

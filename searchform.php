@@ -13,7 +13,7 @@
         name="s"
         value="<?php echo get_search_query(); ?>"
         id="search"
-        aira-label="Search for blogs"
+        aria-label="Search for blogs"
         placeholder="Search for blogs..."
         required
       />
