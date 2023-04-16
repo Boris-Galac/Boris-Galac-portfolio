@@ -38,6 +38,9 @@
 .text-center {
   text-align: center;
 }
+.m-auto {
+  margin: auto;
+}
 
 /* Buttons */
 
@@ -95,8 +98,6 @@
 }
 .secondary-btn:hover::after {
   width: 100%;
-}
-.link {
 }
 .see-more-link {
   position: absolute;

@@ -15,7 +15,7 @@
             <article class="work__row d-grid p-1 right" aria-label="this is article about research">
               <div class="work__row-col">
                 <img
-                  src="/wp-content/themes/boris-galac/assets/images/graphic-des-img-1.png"
+                  src="/wp-content/themes/boris-galac/assets/images/research.png"
                   alt="user flow image"
                   class="work__row-col-image"
                 />
@@ -36,7 +36,7 @@
             <article class="work__row d-grid p-1 left" aria-label="this is article about concept development">
               <div class="work__row-col order-2">
                 <img
-                  src="/wp-content/themes/boris-galac/assets/images/graphic-des-img-2.png"
+                  src="/wp-content/themes/boris-galac/assets/images/sketch.png"
                   alt="sketching image"
                 />
               </div>
@@ -57,7 +57,7 @@
             <article class="work__row d-grid p-1 right"  aria-label="this is article about design execution">
               <div class="work__row-col">
                 <img
-                  src="/wp-content/themes/boris-galac/assets/images/graphic-des-img-3.png"
+                  src="/wp-content/themes/boris-galac/assets/images/design-execution.png"
                   alt="wireframe image"
                 />
               </div>
@@ -77,19 +77,19 @@
             <article class="work__row d-grid p-1 left"  aria-label="this is article about finalization">
               <div class="work__row-col order-2">
                 <img
-                  src="/wp-content/themes/boris-galac/assets/images/graphic-des-img-4.png"
+                  src="/wp-content/themes/boris-galac/assets/images/mockup.png"
                   alt="high fidelity image"
                 />
               </div>
               <div class="work__row-col">
                 <h3 class="work--subheading mb-2">finalization</h3>
                 <p class="p-text">
-                  In the finalization phase, designers make any necessary
-                  revisions and prepare the final design files for delivery.
+                  In the finalization phase, i'm make any necessary
+                  revisions and prepare the final design files for delivery including mockuping.
                 </p>
                 <br />
                 <p class="p-text">
-                  They ensure that the design meets all technical specifications
+                  It ensure that the design meets all technical specifications
                   and is ready for printing or digital use.
                 </p>
               </div>

@@ -248,7 +248,7 @@
                 </p>
                 <br />
                 <p class="p-text">
-                  Proficient in design software such as Figma, from Adobe; XD, Photoshop,
+                  Proficient in design software such as Figma, from Adobe suite; Xd, Photoshop,
                   Illustrator, InDesign. Also i have strong skill to translate design to proper
                   and efficient code and HTML, CSS, and JavaScript and integrate with Wordpress or Webflow.
                 </p>
